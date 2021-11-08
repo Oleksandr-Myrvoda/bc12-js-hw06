@@ -3,13 +3,12 @@ const inputRef = document.querySelector("#validation-input");
 const validationRef = () => {
   const classList = inputRef.classList;
 
-  if (inputRef.value.length === parseInt(inputRef.dataset.length)) {
-    classList.add("valid");
-    classList.remove("invalid");
-  } else {
-    classList.add("invalid");
-    classList.remove("valid");
-  }
+  classList.remove("invalid", "valid");
+  classList.add(
+    inputRef.value.length === parseInt(inputRef.dataset.length)
+      ? "valid"
+      : "invalid"
+  );
 };
 
 inputRef.addEventListener("blur", validationRef);
