@@ -1,0 +1,38 @@
+/*  task 03 ========================================*/
+.gallery {
+  display: flex;
+  cursor: pointer;
+}
+
+.js-galleryItem {
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.js-galleryItem:last-child {
+  margin-right: 0px;
+}
+
+.js-galleryImage {
+  display: block;
+  width: 300px;
+  height: 100%;
+}
+.js-galleryImage:hover,
+.js-galleryImage:focus {
+  box-shadow: 10px 5px 5px rgb(26, 25, 25);
+  transition: all 250ms cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+/*  task 06 ========================================*/
+#validation-input {
+  border: 2px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
